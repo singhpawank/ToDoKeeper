@@ -4,7 +4,6 @@
             <div class="item"> 
                 <form id=<%= i %> class="mark-form" action="/itemDone" method="POST">
                     <input type="checkbox" class="checkbox <%= list[i].isDone?'checked':'' %>" name="isDone"  onclick="this.form.submit();">
-                    <span class="mark"></span>
                     <input type="hidden" name="name"   value="<%= name %>" >
                     <input type="hidden" name="itemId"   value=<%= list[i]._id %> >
                 </form>

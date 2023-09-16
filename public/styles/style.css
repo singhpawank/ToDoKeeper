@@ -65,39 +65,28 @@ html {
     padding-bottom: 15px;
 }
 
-
 .item {
     width: 100%;
     height: 50px;
-    align-self: center;
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
     padding: 0 20px;
 }
 
-.mark-form{
+.mark-form {
     display: flex;
     align-items: center;
 }
 
-.checkbox{
+.checkbox {
     width: 15px;
     cursor: pointer;
 }
 
-.checkbox input:checked {
-    color: #E55604;
-}
-
-.checkbox + input:checked ~ .mark {
-    background-color: green;
-}
-.item p{
+.item p {
     font-size: large;
 }
-
-
 
 #newItem-form {
     display: flex;
@@ -107,7 +96,6 @@ html {
     width: 310px;
     height: 40px;
 }
-
 
 #inputItem {
     width: 85%;
@@ -139,32 +127,32 @@ p.checked {
     text-decoration-thickness: 3px;
 }
 
-.delete-form{
-    margin-left: auto; 
-    margin-right: 6px;  
-    display: none;  
+.delete-form {
+    margin-left: auto;
+    margin-right: 6px;
+    display: none;
 }
 
-.delete-form:hover{
-    cursor: pointer !important;
-}
-
-.display-inline{
-    display: inline;
-}
-
-.delete-btn{
-    border: none;
+.delete-form:hover {
     cursor: pointer;
 }
 
-.delete-btn img{
+.display-inline {
+    display: inline;
+}
+
+.delete-btn {
+    border: none;
+    cursor: pointer;
+    background-color: #EBE4D1;
+}
+
+.delete-btn img {
     width: 20px;
     height: 20px;
 }
 
-
-footer{
+footer {
     background-color: #26577C;
     height: 30px;
     width: 100%;
@@ -174,14 +162,17 @@ footer{
     justify-content: center;
     align-items: center;
 }
-footer p{
+
+footer p {
     font-size: 13px;
 }
-footer a, img{
+
+footer a,
+img {
     height: 20px;
 }
 
-footer a{
+footer a {
     margin-left: 10px;
-    
+
 }
