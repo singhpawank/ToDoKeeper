@@ -21,7 +21,7 @@ const connectionOptions = JSON.parse(process.env.MONGODB_OPTIONS || {
 });
 
 // Connect to MongoDB 
-connectDB(DATABASE_URI, connectionOptions);
+await connectDB(DATABASE_URI, connectionOptions);
   
 const HomeItem = new model("homeItem", itemSchema);
 const WorkItem = new model("workItem", itemSchema);
