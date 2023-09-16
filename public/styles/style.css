@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #B4B4B3;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #26577C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+}
+
+#logo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-items a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 15px;
+}
+
+#heading {
+    text-align: center;
+    background-color: #26577C;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    margin: auto;
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.content {
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    min-height: 450px;
+    background-color: #EBE4D1;
+    padding-bottom: 15px;
+}
+
+
+.item {
+    width: 100%;
+    height: 50px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 0 20px;
+}
+
+.mark-form{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    width: 15px;
+    cursor: pointer;
+}
+
+.checkbox input:checked {
+    color: #E55604;
+}
+
+.checkbox + input:checked ~ .mark {
+    background-color: green;
+}
+.item p{
+    font-size: large;
+}
+
+
+
+#newItem-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 310px;
+    height: 40px;
+}
+
+
+#inputItem {
+    width: 85%;
+    border: none;
+    border-radius: 3px;
+    height: 28px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#addItem {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: #26577C;
+    color: white;
+    font-size: 20px;
+}
+
+.item input {
+    margin-right: 20px;
+}
+
+p.checked {
+    text-decoration: line-through;
+    text-decoration-color: green;
+    text-decoration-thickness: 3px;
+}
+
+.delete-form{
+    margin-left: auto; 
+    margin-right: 6px;  
+    display: none;  
+}
+
+.delete-form:hover{
+    cursor: pointer !important;
+}
+
+.display-inline{
+    display: inline;
+}
+
+.delete-btn{
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+
+footer{
+    background-color: #26577C;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 13px;
+}
+footer a, img{
+    height: 20px;
+}
+
+footer a{
+    margin-left: 10px;
+    
+}

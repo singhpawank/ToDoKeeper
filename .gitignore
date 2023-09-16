@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for storing npm packages
+node_modules
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment configuration
+.env
+
+# Visual Studio Code settings
+.vscode
+
+# Yarn integrity file
+.yarn-integrity
+
+# Production build
+build
+
+# Coverage output
+coverage
+
+# Testing cache
+.nyc_output
+
+# Editor-specific files
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*/

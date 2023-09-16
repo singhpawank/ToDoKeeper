@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs")  %>
+
+<% for(i=locals.list.length-1; i>=0; i--){ %>
+            <div class="item"> 
+                <form id=<%= i %> class="mark-form" action="/itemDone" method="POST">
+                    <input type="checkbox" class="checkbox <%= list[i].isDone?'checked':'' %>" name="isDone"  onclick="this.form.submit();">
+                    <span class="mark"></span>
+                    <input type="hidden" name="name"   value="<%= name %>" >
+                    <input type="hidden" name="itemId"   value=<%= list[i]._id %> >
+                </form>
+                <p class="<%= list[i].isDone?'checked':'' %>"> <%= list[i].name %> </p>
+                <form class="delete-form <%= list[i].isDone?'display-inline':'' %>" action="/deleteItem" method="POST">
+                    <input type="hidden" name="name"   value="<%= name %>" >
+                    <input type="hidden" name="itemId"   value=<%= list[i]._id %> >
+                    <button class="delete-btn"><img src="images/delete.png" alt=""></button>
+                </form>
+            </div>
+        <% } %>
+ <%- include("partials/footer.ejs")  %>
